@@ -1,0 +1,4323 @@
+<!DOCTYPE html>
+<!-- saved from url=(0384)https://tesu15.atlassian.net/sr/jira.issueviews:searchrequest-fullcontent/temp/SearchRequest.html?jqlQuery=assignee+in+%28712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7%29+AND+issuetype+in+%28Bug%2C+Story%29+AND+labels+in+%28BigBox%2C+TMMM%29+AND+created+%3E%3D+-30d+ORDER+BY+created+DESC%2C+due+DESC%2C+issuetype+ASC&atl_token=9b4e63c1de1c1f012b29e1837fc21cd676271e42_lin&tempMax=1000 -->
+<html class="webkit chrome"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Jira</title>
+    
+            
+        <script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path.context-path"]="\"\"";
+WRM._unparsedData["com.atlassian.plugins.atlassian-plugins-webresource-rest:curl.cross-origin-resources"]="false";
+WRM._unparsedData["jira.webresources:feature-flags.feature-flag-data"]="{\"enabled-feature-keys\":[\"com.atlassian.jira.projects.issuenavigator\",\"nps.survey.inline.dialog\",\"atlassian.aui.raphael.disabled\",\"com.atlassian.jira.projects.ProjectCentricNavigation.Switch\"],\"feature-flag-states\":{\"com.atlassian.jira.plugins.mail.internal\":false,\"com.atlassian.jira.feature.flag.for.TestFeatureFlagResource\":false,\"jira.feature.rest.single.step.avatar.upload\":true,\"jira.ondemand.maintain.trusted.apps\":true}}";
+WRM._unparsedData["com.atlassian.jira.jira-client-analytics-plugin:analytics-context-provider.client-analytic-descriptors"]="{\"analyticsResource\":{\"jira-core\":{\"events\":{\"issue.comment.added\":{\"trigger\":\"click #issue-comment-add-submit\",\"properties\":{\"comment-length\":\"value.length #issue-comment-add #comment\"}}}}},\"tenantId\":\"96644d0c-dfa4-401f-b058-e1d6624aeb34\",\"orgId\":\"79911b2a-bdj1-123d-k286-c3b9941jck01\",\"aid\":\"712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7\",\"env\":\"prod\"}";
+WRM._unparsedData["jira.webresources:default-comment-security-level.DefaultCommentSecurityLevelHelpLink"]="{\"extraClasses\":\"default-comment-level-help\",\"title\":\"Commenting on an Issue\",\"url\":\"https://confluence.atlassian.com/display/JIRASOFTWARECLOUD/Editing+and+collaborating+on+issues#Editingandcollaboratingonissues-addcommentsCommentingonissues\",\"isLocal\":false}";
+WRM._unparsedData["jira.webresources:key-commands.shortcuts"]="[{\"moduleKey\":\"go-to-dashboard-kb-shortcut\",\"keys\":[[\"g\",\"d\"]],\"context\":\"global\",\"op\":\"goTo\",\"param\":\"/secure/Dashboard.jspa\"},{\"moduleKey\":\"greenhopper-gh-shortcut\",\"keys\":[[\"g\",\"h\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"gh.app.globalkeyboardshortcuts.goToAgile();\"},{\"moduleKey\":\"browse-project-kb-shortcut\",\"keys\":[[\"g\",\"p\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"var elem = jQuery(\\\"#browse_link\\\");\\n                if (elem.length \u003e 0) {\\n                    window.location.href = elem.attr(\\\"href\\\");\\n                }\"},{\"moduleKey\":\"greenhopper-agile-shortcut\",\"keys\":[[\"g\",\"a\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"gh.app.globalkeyboardshortcuts.goToAgile();\"},{\"moduleKey\":\"issue-navigator-kb-shortcut\",\"keys\":[[\"g\",\"i\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"var elem = jQuery(\\\"#find_link\\\");\\n                if (elem.length \u003e 0) {\\n                    window.location.href = elem.attr(\\\"href\\\");\\n                }\"},{\"moduleKey\":\"admin.quicksearch.dialog.shortcut\",\"keys\":[[\"g\",\"g\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"JIRA.Shifter.show();\"},{\"moduleKey\":\"quicksearch\",\"keys\":[[\"/\"]],\"context\":\"global\",\"op\":\"moveToAndFocus\",\"param\":\"#quickSearchInput, #admin-quick-nav-field\"},{\"moduleKey\":\"create.issue\",\"keys\":[[\"c\"]],\"context\":\"global\",\"op\":\"moveToAndClick\",\"param\":\"#header .create-issue\"},{\"moduleKey\":\"shifter\",\"keys\":[[\".\"]],\"context\":\"global\",\"op\":\"execute\",\"param\":\"JIRA.Shifter.show();\"},{\"moduleKey\":\"help\",\"keys\":[[\"?\"]],\"context\":\"global\",\"op\":\"click\",\"param\":\"#keyshortscuthelp\"}]";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+<link type="text/css" rel="stylesheet" href="./Jira_files/batch.css" data-wrm-key="_super" data-wrm-batch-type="context" media="all">
+<link type="text/css" rel="stylesheet" href="./Jira_files/com.atlassian.auiplugin_aui-labels.css" data-wrm-key="com.atlassian.auiplugin:aui-labels" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="./Jira_files/jira.webresources_theme-adg3.css" data-wrm-key="jira.webresources:theme-adg3" data-wrm-batch-type="resource" media="all">
+<link type="text/css" rel="stylesheet" href="./Jira_files/jira.webresources_global-static.css" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" media="all">
+<script type="text/javascript" src="./Jira_files/batch.js.download" data-wrm-key="_super" data-wrm-batch-type="context" data-initially-rendered=""></script><style type="text/css"></style><style type="text/css"></style>
+<script type="text/javascript" src="./Jira_files/jira.webresources_global-static.js.download" data-wrm-key="jira.webresources:global-static" data-wrm-batch-type="resource" data-initially-rendered=""></script>
+<script>
+window.WRM=window.WRM||{};window.WRM._unparsedData=window.WRM._unparsedData||{};window.WRM._unparsedErrors=window.WRM._unparsedErrors||{};
+WRM._unparsedData["_wrmBatchContents"]="{\"js\":{\"_super\":[\"jira.webresources:es6-promise\",\"jira.webresources:promise-polyfill\",\"jira.webresources:usertiming-polyfill\",\"jira.webresources:almond\",\"jira.webresources:almond-analytics\",\"com.atlassian.auiplugin:aui-reset\",\"com.atlassian.auiplugin:aui-page-typography\",\"com.atlassian.auiplugin:aui-avatars\",\"com.atlassian.auiplugin:aui-page-layout\",\"com.atlassian.plugins.atlassian-plugins-webresource-plugin:data\",\"com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path\",\"com.atlassian.auiplugin:ajs-contextpath\",\"com.atlassian.plugins.jquery:jquery-1.7.2\",\"com.atlassian.plugins.jquery:jquery\",\"com.atlassian.auiplugin:jquery-lib\",\"com.atlassian.auiplugin:jquery-compatibility\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-polyfills-console\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-jquery\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-create-element\",\"com.atlassian.auiplugin:internal-object-assign-4.0.1-index\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-globalize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-deprecation\",\"com.atlassian.auiplugin:aui-deprecation\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-polyfills-custom-event\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-constants\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-version\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-globals\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-data\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-mutation-observer\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-utils\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-registry\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-lifecycle\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-fix-ie-innerhtml\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-document-observer\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-skate\",\"com.atlassian.auiplugin:internal-tether-0.6.5-tether\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-version\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-prevent-default\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-stop-event\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-index-of\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-contains\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-include\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-toggle-class-name\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-set-visible\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-set-current\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-is-visible\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-is-clipped\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-params\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-populate-parameters\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-log\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-to-init\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-firebug\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-clone\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-alphanum\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-on-text-resize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-unbind-text-resize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-escape\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-escape-html\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-filter-by-search\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-debounce\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-unique-id\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-add-id\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-forms\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-setup\",\"com.atlassian.auiplugin:deprecated-legacy-ajs-file\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-format\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-animation\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-feature-flags\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-blanket\",\"com.atlassian.auiplugin:aui-core\",\"com.atlassian.auiplugin:internal-basic-css\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-plugins-jquery-aop\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-drop-down\",\"com.atlassian.auiplugin:dropdown\",\"com.atlassian.auiplugin:icons\",\"com.atlassian.auiplugin:table\",\"com.atlassian.auiplugin:internal-form-css\",\"com.atlassian.auiplugin:internal-message-css\",\"com.atlassian.auiplugin:ajs-gadgets-base\",\"com.atlassian.auiplugin:toolbar\",\"com.atlassian.auiplugin:aui-buttons\",\"com.atlassian.auiplugin:aui-toolbar2\",\"com.atlassian.soy.soy-template-plugin:soy-deps\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-widget\",\"com.atlassian.auiplugin:internal-aui-widget\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-i18n-aui\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-i18n\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-skate\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-navigation\",\"com.atlassian.auiplugin:aui-navigation\",\"com.atlassian.auiplugin:aui-experimental-iconfont\",\"com.atlassian.auiplugin:aui-header-unresponsive\",\"com.atlassian.auiplugin:internal-skatejs-template-html-0.0.0-dist-template-html\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-header-create-header\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-header\",\"com.atlassian.auiplugin:aui-header\",\"com.atlassian.auiplugin:aui-page-header\",\"com.atlassian.auiplugin:aui-page-suite\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-focus-manager\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-key-code\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-layer\",\"com.atlassian.auiplugin:aui-feature-flags\",\"com.atlassian.auiplugin:aui-focus-manager\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-layer-manager\",\"com.atlassian.auiplugin:keycode\",\"com.atlassian.auiplugin:aui-layer-manager\",\"com.atlassian.auiplugin:layer\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-alignment\",\"com.atlassian.auiplugin:aui-alignment\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-browser\",\"com.atlassian.auiplugin:internal-aui-browser\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-state\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-dropdown2\",\"com.atlassian.auiplugin:aui-dropdown2\",\"com.atlassian.auiplugin:internal-fancy-file-input-2.0.1-dist-fancy-file-input\",\"com.atlassian.auiplugin:internal-src-js-aui-fancy-file-input\",\"com.atlassian.auiplugin:fancy-file-input\",\"com.atlassian.auiplugin:hotkeys\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-event\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-dialog\",\"com.atlassian.auiplugin:dialog\",\"com.atlassian.auiplugin:internal-css.escape-1.5.0-css-escape\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-inline-dialog\",\"com.atlassian.auiplugin:internal-inline-dialog-common\",\"com.atlassian.auiplugin:inline-dialog\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-template\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-messages\",\"com.atlassian.auiplugin:message\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tabs\",\"com.atlassian.auiplugin:tabs\",\"com.atlassian.auiplugin:jquery-ui-core-1.8.24-patched\",\"com.atlassian.auiplugin:jquery-ui-core\",\"com.atlassian.auiplugin:internal-jquery-ui-partial\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-jquery-jquery-hotkeys\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-jquery-jquery-moveto\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-underscorejs-underscore\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-underscore\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-when-i-type\",\"com.atlassian.auiplugin:internal-keyboardshortcuts\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-cookie\",\"com.atlassian.auiplugin:cookie\",\"com.atlassian.auiplugin:template\",\"com.atlassian.auiplugin:event\",\"com.atlassian.auiplugin:internal-ajs-no-context-path\",\"com.atlassian.auiplugin:ajs\",\"com.atlassian.auiplugin:jquery-ui\",\"com.atlassian.plugin.jslibs:jquery.textoverflow-0.7.4\",\"com.atlassian.plugin.jslibs:jquery.pjax-2011.07.10\",\"com.atlassian.plugin.jslibs:jquery.lazyload-1.8.0\",\"com.atlassian.plugin.jslibs:jquery.flot-0.7\",\"com.atlassian.plugin.jslibs:jquery.effects-1.8rc3\",\"com.atlassian.plugin.jslibs:jquery.dragtable-2.0.4\",\"com.atlassian.plugin.jslibs:jquery.serializeobject-0.2\",\"com.atlassian.plugin.jslibs:jquery.scrollintoview-1.8\",\"jira.webresources:jquery\",\"jira.webresources:aui-core-amd-shim\",\"com.atlassian.auiplugin:aui-badge\",\"com.atlassian.auiplugin:aui-lozenge\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-spin-spin\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-jquery-spin\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-spin\",\"com.atlassian.auiplugin:aui-spinner\",\"com.atlassian.auiplugin:aui-experimental-spinner\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-amdify\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-flag\",\"com.atlassian.auiplugin:aui-flag\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:curl\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:require-handler-v2\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager\",\"com.atlassian.plugin.jslibs:skate-0.12.6\",\"jira.webresources:skate\",\"jira.webresources:icons\",\"jira.webresources:jira-logger\",\"jira.webresources:deprecator\",\"jira.webresources:legacy-namespacing\",\"com.atlassian.auiplugin:ajs-underscorejs\",\"jira.webresources:ajs-underscorejs-amd-shim\",\"jira.webresources:jira-metadata\",\"jira.webresources:aui-extensions\",\"jira.webresources:feature-flags\",\"jira.webresources:jira-events\",\"jira.webresources:jira-formatter\",\"jira.webresources:browser-properties\",\"jira.webresources:top-same-origin-window\",\"jira.webresources:util-lite\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-backbone-backbone\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-backbone\",\"com.atlassian.auiplugin:ajs-backbone\",\"jira.webresources:ajs-backbone-amd-shim\",\"jira.webresources:number-formatter\",\"jira.webresources:util\",\"jira.webresources:content-retrievers\",\"jira.webresources:list-styles\",\"jira.webresources:inline-layer\",\"jira.webresources:list\",\"jira.webresources:dropdown\",\"jira.webresources:issue-table-adg3\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-jquery-tipsy\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tipsy\",\"com.atlassian.auiplugin:aui-tipsy\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tooltip\",\"com.atlassian.auiplugin:aui-tooltips\",\"com.atlassian.auiplugin:aui-experimental-tooltips\",\"com.atlassian.plugins.issue-status-plugin:issue-status-resources\",\"jira.webresources:issue-statuses\",\"jira.webresources:issue-table\",\"jira.webresources:select-model\",\"jira.webresources:general-configuration\",\"com.atlassian.auiplugin:aui-experimental-soy-templates\",\"jira.webresources:js-soy-templates\",\"jira.webresources:page-loading-indicator\",\"jira.webresources:messages\",\"jira.webresources:jira-dialog-core\",\"com.atlassian.jira.jira-issue-nav-plugin:issues-api\",\"com.atlassian.jira.jira-issue-nav-plugin:issuenav-legacy\",\"jira.webresources:jira-issuenavigator\",\"jira.webresources:jira-dialog-config\",\"jira.webresources:set-focus\",\"jira.webresources:select-pickers\",\"jira.webresources:jira-analytics-amd\",\"jira.webresources:trigger-custom-event\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-web-client-library\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-context-provider\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-events-transformers\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-web-client\",\"jira.webresources:shifter\",\"com.atlassian.jira.jira-npmbridge-plugin:atlassian-spa-iframe-amd\",\"com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api\",\"com.atlassian.jira.jira-atlaskit-plugin:sidebar\",\"com.atlassian.jira.jira-atlaskit-plugin:forge\",\"com.atlassian.jira.jira-atlaskit-plugin:container-api\",\"jira.webresources:inline-attach\",\"jira.webresources:dialogs\",\"jira.webresources:default-comment-security-level\",\"jira.webresources:dropdown-select\",\"jira.webresources:user-management\",\"jira.webresources:mentions-base\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-progressive-data-set\",\"com.atlassian.auiplugin:aui-experimental-data-handlers\",\"jira.webresources:data-sets\",\"jira.webresources:mentions-feature\",\"jira.webresources:mentions\",\"jira.webresources:jira-edition\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-banner\",\"com.atlassian.auiplugin:aui-banner\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-trigger\",\"com.atlassian.auiplugin:aui-trigger\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-attributes\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-enforcer\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-inline-dialog2\",\"com.atlassian.auiplugin:aui-inline-dialog2\",\"jira.webresources:keyboard-shortcut-toggle\",\"jira.webresources:assignee-picker\",\"jira.webresources:jira-global\",\"jira.webresources:key-commands\",\"jira.webresources:header\",\"jira.webresources:superbatch-default\",\"_context:_super\"]},\"css\":{\"_super\":[\"jira.webresources:es6-promise\",\"jira.webresources:promise-polyfill\",\"jira.webresources:usertiming-polyfill\",\"jira.webresources:almond\",\"jira.webresources:almond-analytics\",\"com.atlassian.auiplugin:aui-reset\",\"com.atlassian.auiplugin:aui-page-typography\",\"com.atlassian.auiplugin:aui-avatars\",\"com.atlassian.auiplugin:aui-page-layout\",\"com.atlassian.plugins.atlassian-plugins-webresource-plugin:data\",\"com.atlassian.plugins.atlassian-plugins-webresource-plugin:context-path\",\"com.atlassian.auiplugin:ajs-contextpath\",\"com.atlassian.plugins.jquery:jquery-1.7.2\",\"com.atlassian.plugins.jquery:jquery\",\"com.atlassian.auiplugin:jquery-lib\",\"com.atlassian.auiplugin:jquery-compatibility\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-polyfills-console\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-jquery\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-create-element\",\"com.atlassian.auiplugin:internal-object-assign-4.0.1-index\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-globalize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-deprecation\",\"com.atlassian.auiplugin:aui-deprecation\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-polyfills-custom-event\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-constants\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-version\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-globals\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-data\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-mutation-observer\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-utils\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-registry\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-lifecycle\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-fix-ie-innerhtml\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-document-observer\",\"com.atlassian.auiplugin:internal-skatejs-0.13.17-lib-skate\",\"com.atlassian.auiplugin:internal-tether-0.6.5-tether\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-version\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-prevent-default\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-stop-event\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-index-of\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-contains\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-include\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-toggle-class-name\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-set-visible\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-set-current\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-is-visible\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-is-clipped\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-params\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-populate-parameters\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-log\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-to-init\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-firebug\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-clone\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-alphanum\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-on-text-resize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-unbind-text-resize\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-escape\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-escape-html\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-filter-by-search\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-debounce\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-unique-id\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-add-id\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-forms\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-setup\",\"com.atlassian.auiplugin:deprecated-legacy-ajs-file\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-format\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-animation\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-feature-flags\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-blanket\",\"com.atlassian.auiplugin:aui-core\",\"com.atlassian.auiplugin:internal-basic-css\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-plugins-jquery-aop\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-drop-down\",\"com.atlassian.auiplugin:dropdown\",\"com.atlassian.auiplugin:icons\",\"com.atlassian.auiplugin:table\",\"com.atlassian.auiplugin:internal-form-css\",\"com.atlassian.auiplugin:internal-message-css\",\"com.atlassian.auiplugin:ajs-gadgets-base\",\"com.atlassian.auiplugin:toolbar\",\"com.atlassian.auiplugin:aui-buttons\",\"com.atlassian.auiplugin:aui-toolbar2\",\"com.atlassian.soy.soy-template-plugin:soy-deps\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-widget\",\"com.atlassian.auiplugin:internal-aui-widget\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-i18n-aui\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-i18n\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-skate\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-navigation\",\"com.atlassian.auiplugin:aui-navigation\",\"com.atlassian.auiplugin:aui-experimental-iconfont\",\"com.atlassian.auiplugin:aui-header-unresponsive\",\"com.atlassian.auiplugin:internal-skatejs-template-html-0.0.0-dist-template-html\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-header-create-header\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-header\",\"com.atlassian.auiplugin:aui-header\",\"com.atlassian.auiplugin:aui-page-header\",\"com.atlassian.auiplugin:aui-page-suite\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-focus-manager\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-key-code\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-layer\",\"com.atlassian.auiplugin:aui-feature-flags\",\"com.atlassian.auiplugin:aui-focus-manager\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-layer-manager\",\"com.atlassian.auiplugin:keycode\",\"com.atlassian.auiplugin:aui-layer-manager\",\"com.atlassian.auiplugin:layer\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-alignment\",\"com.atlassian.auiplugin:aui-alignment\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-browser\",\"com.atlassian.auiplugin:internal-aui-browser\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-state\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-dropdown2\",\"com.atlassian.auiplugin:aui-dropdown2\",\"com.atlassian.auiplugin:internal-fancy-file-input-2.0.1-dist-fancy-file-input\",\"com.atlassian.auiplugin:internal-src-js-aui-fancy-file-input\",\"com.atlassian.auiplugin:fancy-file-input\",\"com.atlassian.auiplugin:hotkeys\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-event\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-dialog\",\"com.atlassian.auiplugin:dialog\",\"com.atlassian.auiplugin:internal-css.escape-1.5.0-css-escape\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-inline-dialog\",\"com.atlassian.auiplugin:internal-inline-dialog-common\",\"com.atlassian.auiplugin:inline-dialog\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-template\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-messages\",\"com.atlassian.auiplugin:message\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tabs\",\"com.atlassian.auiplugin:tabs\",\"com.atlassian.auiplugin:jquery-ui-core-1.8.24-patched\",\"com.atlassian.auiplugin:jquery-ui-core\",\"com.atlassian.auiplugin:internal-jquery-ui-partial\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-jquery-jquery-hotkeys\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-jquery-jquery-moveto\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-underscorejs-underscore\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-underscore\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-when-i-type\",\"com.atlassian.auiplugin:internal-keyboardshortcuts\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-cookie\",\"com.atlassian.auiplugin:cookie\",\"com.atlassian.auiplugin:template\",\"com.atlassian.auiplugin:event\",\"com.atlassian.auiplugin:internal-ajs-no-context-path\",\"com.atlassian.auiplugin:ajs\",\"com.atlassian.auiplugin:jquery-ui\",\"com.atlassian.plugin.jslibs:jquery.textoverflow-0.7.4\",\"com.atlassian.plugin.jslibs:jquery.pjax-2011.07.10\",\"com.atlassian.plugin.jslibs:jquery.lazyload-1.8.0\",\"com.atlassian.plugin.jslibs:jquery.flot-0.7\",\"com.atlassian.plugin.jslibs:jquery.effects-1.8rc3\",\"com.atlassian.plugin.jslibs:jquery.dragtable-2.0.4\",\"com.atlassian.plugin.jslibs:jquery.serializeobject-0.2\",\"com.atlassian.plugin.jslibs:jquery.scrollintoview-1.8\",\"jira.webresources:jquery\",\"jira.webresources:aui-core-amd-shim\",\"com.atlassian.auiplugin:aui-badge\",\"com.atlassian.auiplugin:aui-lozenge\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-spin-spin\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-jquery-spin\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-spin\",\"com.atlassian.auiplugin:aui-spinner\",\"com.atlassian.auiplugin:aui-experimental-spinner\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-amdify\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-flag\",\"com.atlassian.auiplugin:aui-flag\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:curl\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:require-handler-v2\",\"com.atlassian.plugins.atlassian-plugins-webresource-rest:web-resource-manager\",\"com.atlassian.plugin.jslibs:skate-0.12.6\",\"jira.webresources:skate\",\"jira.webresources:icons\",\"jira.webresources:jira-logger\",\"jira.webresources:deprecator\",\"jira.webresources:legacy-namespacing\",\"com.atlassian.auiplugin:ajs-underscorejs\",\"jira.webresources:ajs-underscorejs-amd-shim\",\"jira.webresources:jira-metadata\",\"jira.webresources:aui-extensions\",\"jira.webresources:feature-flags\",\"jira.webresources:jira-events\",\"jira.webresources:jira-formatter\",\"jira.webresources:browser-properties\",\"jira.webresources:top-same-origin-window\",\"jira.webresources:util-lite\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-backbone-backbone\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-backbone\",\"com.atlassian.auiplugin:ajs-backbone\",\"jira.webresources:ajs-backbone-amd-shim\",\"jira.webresources:number-formatter\",\"jira.webresources:util\",\"jira.webresources:content-retrievers\",\"jira.webresources:list-styles\",\"jira.webresources:inline-layer\",\"jira.webresources:list\",\"jira.webresources:dropdown\",\"jira.webresources:issue-table-adg3\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-vendor-jquery-jquery-tipsy\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tipsy\",\"com.atlassian.auiplugin:aui-tipsy\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-tooltip\",\"com.atlassian.auiplugin:aui-tooltips\",\"com.atlassian.auiplugin:aui-experimental-tooltips\",\"com.atlassian.plugins.issue-status-plugin:issue-status-resources\",\"jira.webresources:issue-statuses\",\"jira.webresources:issue-table\",\"jira.webresources:select-model\",\"jira.webresources:general-configuration\",\"com.atlassian.auiplugin:aui-experimental-soy-templates\",\"jira.webresources:js-soy-templates\",\"jira.webresources:page-loading-indicator\",\"jira.webresources:messages\",\"jira.webresources:jira-dialog-core\",\"com.atlassian.jira.jira-issue-nav-plugin:issues-api\",\"com.atlassian.jira.jira-issue-nav-plugin:issuenav-legacy\",\"jira.webresources:jira-issuenavigator\",\"jira.webresources:jira-dialog-config\",\"jira.webresources:set-focus\",\"jira.webresources:select-pickers\",\"jira.webresources:jira-analytics-amd\",\"jira.webresources:trigger-custom-event\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-web-client-library\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-context-provider\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-events-transformers\",\"com.atlassian.jira.jira-client-analytics-plugin:analytics-web-client\",\"jira.webresources:shifter\",\"com.atlassian.jira.jira-npmbridge-plugin:atlassian-spa-iframe-amd\",\"com.atlassian.plugins.browser.metrics.browser-metrics-plugin:api\",\"com.atlassian.jira.jira-atlaskit-plugin:sidebar\",\"com.atlassian.jira.jira-atlaskit-plugin:forge\",\"com.atlassian.jira.jira-atlaskit-plugin:container-api\",\"jira.webresources:inline-attach\",\"jira.webresources:dialogs\",\"jira.webresources:default-comment-security-level\",\"jira.webresources:dropdown-select\",\"jira.webresources:user-management\",\"jira.webresources:mentions-base\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-progressive-data-set\",\"com.atlassian.auiplugin:aui-experimental-data-handlers\",\"jira.webresources:data-sets\",\"jira.webresources:mentions-feature\",\"jira.webresources:mentions\",\"jira.webresources:jira-edition\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-banner\",\"com.atlassian.auiplugin:aui-banner\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-trigger\",\"com.atlassian.auiplugin:aui-trigger\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-attributes\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-internal-enforcer\",\"com.atlassian.auiplugin:internal-@atlassian-aui-src-js-aui-inline-dialog2\",\"com.atlassian.auiplugin:aui-inline-dialog2\",\"jira.webresources:keyboard-shortcut-toggle\",\"jira.webresources:assignee-picker\",\"jira.webresources:jira-global\",\"jira.webresources:key-commands\",\"jira.webresources:header\",\"jira.webresources:superbatch-default\",\"_context:_super\"]}}";
+if(window.WRM._dataArrived)window.WRM._dataArrived();</script>
+
+        <style type="text/css">
+
+.tableBorder, .grid
+{
+    background-color: #fff;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tableBorder td, .grid td
+{
+    vertical-align: top;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+.noPadding
+{
+    padding: 0 !important;
+}
+
+h3 .subText
+{
+    font-size: 60%;
+    font-weight: normal;
+}
+
+.tabLabel
+{
+    font-weight: bold;
+    border: 1px solid #ccc;
+    border-bottom:none;
+    padding: 2px;
+    display: inline;
+}
+
+td.blank
+{
+    padding: 0;
+    margin: 0;
+}
+
+.blank td
+{
+    border: none;
+}
+
+#descriptionArea
+{
+    margin: 0;
+    padding: 2px;
+    border: 1px solid #ccc;
+}
+
+hr
+{
+    border-top:1px solid #aaa;
+}
+
+hr.fullcontent
+{
+  height: 15px;
+  padding: 10px 0;
+  background: #fff url('https://tesu15.atlassian.net/images/icons/hr.gif') no-repeat scroll center;
+}
+
+</style>
+
+<script type="text/javascript" charset="utf-8" src="./Jira_files/batch(1).js.download"></script><script type="text/javascript" charset="utf-8" src="./Jira_files/batch(2).js.download"></script></head>
+<body data-aui-version="6.0.5">
+
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-335]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-335">Krepšelis: gaunamas užsakymą patvirtinantis laiškas nutraukus pirkimą banke. </a>
+            <span class="subText">
+               Created: 16/Feb/24                   &nbsp;Updated: 19/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10344-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240216-092913.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10344-value" class="value" bgcolor="#ffffff" width="80%">      0|i00213:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10344-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Krepšelis: gaunamas užsakymą patvirtinantis laiškas į el. paštą  su užsakymo informacija net ir nutraukus pirkimą. </p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Būti prisijungus prie paskyros</li>
+	<li>Įdėti į krepšelį bet kurią prekę (esančią sandėlyje):</li>
+	<li>Eiti į prekių krepšelį įvykdyti visus žingsnius iki ‘Mokėjimo būdas'.</li>
+	<li>Pasirinkti mokėjimo būdą, pvz.: SEB.</li>
+	<li>Pažymėti varnelę ties ‘Patvirtinu, kad sutinku su ‘privatumo politika’ ir 'Terms and conditions of purchase’.</li>
+	<li>Spausti <b><span class="error">[Patvirtinu užsakymą]</span>.</b></li>
+	<li>Nutraukti mokėjimą. Grįžti pas pardavėją.</li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Gauname el. laišką su padėka,  užsakymo patvirtinimu ir pristatymo informacija.</p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Neturėtume gauti el. laiško, kol neapmokėjome prekių banke. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240216-092913.png" height="589" width="1279" style="border: 0px solid black"></span></p>
+
+
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-334]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-334">Mano norai: norimos prekės išsaugomos ne į pasirinktą norų sąrašą</a>
+            <span class="subText">
+               Created: 16/Feb/24                   &nbsp;Updated: 16/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10343-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240216-090736.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240216-091224.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10343-value" class="value" bgcolor="#ffffff" width="80%">      0|i0020v:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10343-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Mano norai: norimos prekės išsaugomos ne į pasirinktą norų sąrašą, o į pirminį. </p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Būti prisijungus</li>
+	<li>Spausti <b><span class="error">[Mano norai]</span></b></li>
+	<li>Sukurti naują norų sąrašo pavadinimą ir <b><span class="error">[Išsaugoti]</span>.</b></li>
+	<li>Pažymėti naują sąrašą kaip numatytąjį</li>
+	<li>Pridėti bet kurią prekę į ‘Mano norai'</li>
+	<li>Grįžti į ‘Mano norai' ir patikrinti naują sąrašą.</li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Prekė prisidėjo prie pirminio sąrašo.</p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Prekė turi prisidėti prie sąrašo, kuris pažymėtas kaip 'numatytas'.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240216-090736.png" height="587" width="1280" style="border: 0px solid black"></span></p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240216-091224.png" height="633" width="1278" style="border: 0px solid black"></span></p>
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-328]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-328">Krepšelis: perkant kelias prekes (su nuolaidos kuponu) netenkame vienos iš nuolaidų</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 19/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10337-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-143814.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-143836.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240219-075235.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10337-value" class="value" bgcolor="#ffffff" width="80%">      0|i001zj:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10337-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Krepšelis: įsidedant kelias prekes (su 20 eur nuolaidos kuponu kiekviena) netenkame vienos iš prekės nuolaidų. Reikia pirktis prekes atskirai. Tačiau jeigu nuolaidų kuponai skirtingų nominalų, pvz.: Nuolaida20 ir Nuolaida5 - tuomet nuolaidos sumuojamos. </p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Būti prisijungus prie paskyros</li>
+	<li>Įdėti į krepšelį prekes:
+	<ol>
+		<li><a href="https://bigbox.lt/visi-televizoriai/1436367-televizorius-samsung-qe85q80catxxh-qled-85-smart-8806094897395.html" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/visi-televizoriai/1436367-televizorius-samsung-qe85q80catxxh-qled-85-smart-8806094897395.html</a></li>
+		<li><a href="https://bigbox.lt/visi-televizoriai/1487712-televizorius-samsung-ue75cu7172uxxh-led-75-smart-8806094853544.html" title="smart-link" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/visi-televizoriai/1487712-televizorius-samsung-ue75cu7172uxxh-led-75-smart-8806094853544.html</a></li>
+	</ol>
+	</li>
+	<li>Eiti į prekių krepšelį.</li>
+	<li>Įvesti nuolaidos kuponą 'NUOLAIDA 20' ir spausti <b><span class="error">[Naudoti kuponą]</span>.</b></li>
+	<li>Bandyti dar kartą įvesti nuolaidos kuponą 'NUOLAIDA 20' ir spausti <b><span class="error">[Naudoti kuponą]</span>.</b></li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Pritaikoma tik viena nuolaida. Gauname pranešimą, kad kuponas jau priskirtas krepšeliui. </p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Prekių nuolaidos kuponai turi sumuotis. Kadangi jeigu nuolaidų kuponai skirtingų nominalų, pvz.: Nuolaida20 ir Nuolaida5 - tuomet nuolaidos sumuojamos.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-143814.png" height="589" width="1280" style="border: 0px solid black"></span></p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-143836.png" height="587" width="1280" style="border: 0px solid black"></span></p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240219-075235.png" height="528" width="1279" style="border: 0px solid black"></span></p>
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-320]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-320">Produkto puslapis: skirtingos prekių kiekio puslapyje opcijos</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 19/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10329-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-134917.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-135146.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10329-value" class="value" bgcolor="#ffffff" width="80%">      0|i001xr:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10329-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Produkto puslapis: skirtingos prekių kiekio puslapyje opcijos.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<p><a href="https://bigbox.lt/123461380-siauros-indaploves" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/123461380-siauros-indaploves</a></p>
+
+<p>palyginti su</p>
+
+<p> <a href="https://bigbox.lt/123460292-virtuves-ir-valgomojo-stalai" title="smart-link" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/123460292-virtuves-ir-valgomojo-stalai</a> </p>
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Skirtingos rodymo puslapyje opcijos.</p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Reikia suvienodinti rodymo puslapyje opcijas.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-134917.png" width="50%" style="border: 0px solid black"></span></p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-135146.png" height="584" width="1280" style="border: 0px solid black"></span></p>
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-314]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-314">Pirkimo taisyklės: viduje esanti nuoroda 'Pristatymas' - nekorektiška</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 19/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10323-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-133818.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-133830.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10323-value" class="value" bgcolor="#ffffff" width="80%">      0|i001wf:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10323-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Pirkimo taisyklės: viduje esanti nuoroda 'Pristatymas' - nekorektiška.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Eiti į <a href="https://bigbox.lt/content/25-pirkimo-taisykles" title="smart-link" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/content/25-pirkimo-taisykles</a></li>
+	<li>Spausti punkte 3. 1 esančią nuorodą 'Pristatymas’ žr. pav apačioje.</li>
+</ol>
+
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-133830.png" height="582" width="1280" style="border: 0px solid black"></span></p>
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Gaunamas klaidos puslapis.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-133818.png" height="588" width="1280" style="border: 0px solid black"></span></p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Nuoroda turi nuvesti į ‘Pristatymas’.</p>
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-310]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-310">Prekių krepšelis: 'Privatumo politika' ir 'Sąlygos'- nekorektiškos nuorodos</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 19/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10319-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240219-074833.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240219-075713.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240219-075728.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10319-value" class="value" bgcolor="#ffffff" width="80%">      0|i001vj:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10319-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Prekių krepšelis: 'Privatumo politika' ir 'Sąlygos' - nekorektiškos nuorodos.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Būti prisijungus prie savo paskyros.</li>
+	<li>Įsidėti bet kurią prekę į krepšelį.</li>
+	<li>Pereiti visus žingsnius iki galutinio žingsnio ‘Mokėjimo būdas’.</li>
+	<li>Spausti <b><span class="error">[privatumo politika]</span></b></li>
+	<li>Spausti <b><span class="error">[Terms and conditions of purchase]</span>.</b></li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Abi nuorodos klaidingos, atidaro, nesusijusius su kontekstu naujus langus žr. apačioje.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240219-075713.png" width="50%" style="border: 0px solid black"></span></p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240219-075728.png" height="637" width="1279" style="border: 0px solid black"></span></p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<ul>
+	<li>Nuoroda <b><span class="error">[privatumo politika]</span></b>  turi nuvesti į privatumo politiką.</li>
+	<li>*<span class="error">[Terms and conditions of purchase*]</span> turi  nuvesti į taisykles ir sąlygas.<br>
+<span class="image-wrap" style=""><img src="./Jira_files/image-20240219-074833.png" height="589" width="1279" style="border: 0px solid black"></span></li>
+</ul>
+
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-293]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-293">Prekės puslapis -&gt; 'Kartu pigiau': užklausos forma</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 03/Mar/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Story
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10302-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-122327.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-122334.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10302-value" class="value" bgcolor="#ffffff" width="80%">      0|i001rr:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10302-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Prekės puslapis -&gt; Kartu pigiau: užklausos forma. Laukelyje ‘Produktas’ galime įvesti vieną simbolį ir išsiųsti užklausą.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Atidaryti <a href="https://bigbox.lt/visi-televizoriai/1436363-televizorius-samsung-qe55q80catxxh-qled-55-smart-8806094897371.html" title="smart-link" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/visi-televizoriai/1436363-televizorius-samsung-qe55q80catxxh-qled-55-smart-8806094897371.html</a></li>
+	<li>Slinkti žemyn iki ‘Kartu pigiau’ ir išskleisti šią opciją.</li>
+	<li>Užpildyti užklausos laukus validžiais duomenimis.</li>
+	<li>Laukelyje ‘Produktai’ įrašyti tik vieną simbolį.</li>
+	<li>Spausti <b><span class="error">[Siųsti užklausą]</span>.</b></li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Gaunamas pranešimas, kad mūsų užklausa gauta. </p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Laukelis ‘Produktai’ turi turėti minimalų įvesties kiekį.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-122327.png" height="517" width="1280" style="border: 0px solid black"></span></p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-122334.png" height="581" width="1280" style="border: 0px solid black"></span></p>
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-274]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-274">Registracija-&gt; Checkbox 'Aš nesu robotas' nepažymėtas kaip privalomas</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 15/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10283-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-114817.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10283-value" class="value" bgcolor="#ffffff" width="80%">      0|i001nr:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10283-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Registracija-&gt; Checkbox 'Aš nesu robotas' nepažymėtas kaip privalomas.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li><a href="https://bigbox.lt/prisijungimas?back=my-account#account-creation" title="smart-link" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/prisijungimas?back=my-account#account-creation</a></li>
+	<li>Registruotis:
+	<ol>
+		<li>Įvesti vardą, pavardę</li>
+	</ol>
+	</li>
+	<li>Įvesti į el. pašto laukelį validų el. paštą, pvz. <a href="mailto:testas@cuvox.de" class="external-link" rel="nofollow noreferrer">testas@cuvox.de</a></li>
+	<li>Ivesti į slaptažodžio laukelį, pvz. asdasd</li>
+	<li>Pažymėti <b><span class="error">[Susipažinau su BIGBOX privatumo politika]</span>.</b></li>
+	<li>Spausti <b><span class="error">[Registruotis]</span>.</b></li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Gaunamas pranešimas, Pažymėkite laukelį "Aš nesu  robotas".</p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p> Checkbox ‘Aš nesu robotas'  turi būti pažymėtas kaip privalomas - žvaigždutės simboliu. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-114817.png" height="588" width="1277" style="border: 0px solid black"></span></p>
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-263]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-263">Paskyra: slaptažodžio keitimas į tą patį (esamą)</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 19/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10272-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240219-105830.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10272-value" class="value" bgcolor="#ffffff" width="80%">      0|i001lb:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10272-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Paskyra: slaptažodžio keitimas į tą patį (esamą).</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Būti prisijungus prie savo paskyros</li>
+	<li>Spausti <b>‘Mano asmeninė informacija’</b></li>
+	<li>Pakeisti slaptažodį į tokį patį, koks yra esamas.</li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Sistema sėkmingai pakeičia slaptažodį.</p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Sistema neturi leisti keisti slaptažodžio į jau esamą. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240219-105830.png" height="588" width="1280" style="border: 0px solid black"></span></p>
+
+
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-254]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-254">'Užfrizintas' loterijos ženkliukas: trukdo skaityti meniu ir kt. mažesnės rezoliucijos ekrane</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 15/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10263-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-105946.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10263-value" class="value" bgcolor="#ffffff" width="80%">      0|i001jb:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10263-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>'Užfrizintas' loterijos ženkliukas: trukdo skaityti meniu ir kt. mažesnės rezoliucijos ekrane.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li><a href="https://bigbox.lt/prisijungimas?back=my-account#account-creation" title="smart-link" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/prisijungimas?back=my-account#account-creation</a></li>
+	<li>Paspausti ‘Burger’ meniu.</li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Elementas trukdo perskaityti meniu. </p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Elementas turi būti paslankus, slėptis išskleidžiant meniu. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-105946.png" height="589" width="1280" style="border: 0px solid black"></span></p>
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-216]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-216">Registracija: slaptažodžio laukelis- leidžia įvesti tarpus ir jų nepanaikina.</a>
+            <span class="subText">
+               Created: 15/Feb/24                   &nbsp;Updated: 15/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10225-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            BigBox                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240215-083713.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10225-value" class="value" bgcolor="#ffffff" width="80%">      0|i001b3:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10225-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Registracija: slaptažodžio laukelis- leidžia įvesti tarpus ir jų nepanaikina.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li><a href="https://bigbox.lt/prisijungimas?back=my-account#account-creation" title="smart-link" class="external-link" rel="nofollow noreferrer">https://bigbox.lt/prisijungimas?back=my-account#account-creation</a></li>
+	<li>Registruotis:
+	<ol>
+		<li>Įvesti vardas - 1 tarpą</li>
+		<li>Įvesti pavardę - 1 tarpą</li>
+	</ol>
+	</li>
+	<li>Įvesti į el. pašto laukelį validų el. paštą, pvz. <a href="mailto:testas@cuvox.de" class="external-link" rel="nofollow noreferrer">testas@cuvox.de</a></li>
+	<li>Ivesti į slaptažodžio laukelį _ _ _ _ _ , (5 tarpai, kablelis).</li>
+	<li>Pažymėti <b><span class="error">[Susipažinau su BIGBOX privatumo politika]</span></b> ir <b><span class="error">[Aš nesu robotas]</span>.</b></li>
+	<li>Spausti <b><span class="error">[Registruotis]</span>.</b></li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Sėkmingai užsiregistruojame. </p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Sistema neturi registruoti, laukelis neturi priimti tarpo kaip simbolio.  Turi panaikinti tarpus slaptažodyje arba įspėti apie netinkamą formatą ir netinkamus simbolius.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240215-083713.png" height="581" width="1279" style="border: 0px solid black"></span></p>
+
+<p><b>Aplinka</b></p>
+
+<p>Microsoft Windows 11 Home Version 10.0.22631 Build 22631;</p>
+
+<p>Google Chrome Version 120.0.6099.227 (Official Build) (32-bit)</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-202]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-202">Mokėjimo krepšelis: beprasmis mygtukas [Atgal]</a>
+            <span class="subText">
+               Created: 14/Feb/24                   &nbsp;Updated: 14/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10211-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            TMMM                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240214-112953.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10211-value" class="value" bgcolor="#ffffff" width="80%">      0|i0017z:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10211-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Mokėjimo krepšelis: beprasmis mygtukas <b><span class="error">[Atgal]</span>.</b></p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Prisijungti su duomenimis:
+	<ol>
+		<li>email: <a href="mailto:test@cuvox.de" class="external-link" rel="nofollow noreferrer">test@cuvox.de</a>;</li>
+		<li>psw.: testas1.</li>
+	</ol>
+	</li>
+	<li>Pridėti bet kurią prekę, esančią sandėlyje į krepšelį.</li>
+	<li>Pereiti į krepšelį.</li>
+	<li>Spausti <b><span class="error">[Pereiti prie apmokėjimo]</span>.</b></li>
+	<li>Paslinkus žemyn rasti ir spausti mygtuką <b><span class="error">[Atgal]</span>.</b></li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Mygtukas paslenka puslapį į viršų.</p>
+
+<p><b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Mygtukas turi grąžinti į prieš tai būvusį žingsnį arba jis yra beprasmis. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240214-112953.png" height="1600" width="720" style="border: 0px solid black"></span></p>
+
+
+
+<p><b>Aplinka</b></p>
+
+<p>Galaxy A32 Android 11;</p>
+
+<p>Chrome 121.0.6167.164</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-196]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-196">'Search bar' netinkamoje puslapio vietoje.</a>
+            <span class="subText">
+               Created: 14/Feb/24                   &nbsp;Updated: 14/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10205-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            TMMM                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240214-095724.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10205-value" class="value" bgcolor="#ffffff" width="80%">      0|i0016n:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10205-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>'Search bar' netinkamoje puslapio vietoje.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li><a href="https://m.aboutyou.lt/prekes-zenklas" title="smart-link" class="external-link" rel="nofollow noreferrer">https://m.aboutyou.lt/prekes-zenklas</a></li>
+	<li>Paslinkti puslapį, stebėti 'Search bar'.</li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>'Search bar' prilipęs puslapio viduryje.</p>
+
+<p><b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>'Search bar'  turi būti užfiksuotas viršuje. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240214-095724.png" height="1600" width="720" style="border: 0px solid black"></span></p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-185]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-185">Registracija: el. paštas, slaptažodis - neleistini spec. simboliai ir tarpai.</a>
+            <span class="subText">
+               Created: 13/Feb/24                   &nbsp;Updated: 14/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10194-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            TMMM                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240213-152932.png &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240213-152944.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10194-value" class="value" bgcolor="#ffffff" width="80%">      0|i00147:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10194-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Registracija: el. paštas, slaptažodis - neleistini spec. simboliai ir tarpai.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li><a href="https://checklink.mail.ru/proxy?es=7YTrbUW6A4H1Vi7kMlTufoR4UbJqp5GCU%2FfKCSkU3LQ%3D&amp;egid=1UMQ%2Bm1y99qZapN9CJIFkpdd0yWjhVYD2loylA9kZNA%3D&amp;url=https%3A%2F%2Fclick.mail.ru%2Fredir%3Fu%3Dhttps%253A%252F%252Fm.aboutyou.lt%252F%253FloginFlow%253Dregister%26c%3Dswm%26r%3Dhttp%26o%3Dmail%26v%3D3%26s%3Da08748394378c1d1&amp;uidl=17078376801368197781&amp;from=budryte.m%40mail.ru&amp;to=&amp;email=budryte.m%40mail.ru" class="external-link" rel="nofollow noreferrer">https://m.aboutyou.lt/?loginFlow=register</a></li>
+	<li>Registruotis:
+	<ol>
+		<li>Įvesti Vardą, Pavardę.</li>
+		<li>Įvesti į el. pašto laukelį netinkamą el. paštą- su spec. simboliais, pvz.: haf$s@g.com.</li>
+		<li>Įvesti slaptažodį su tarpais viduje.</li>
+	</ol>
+	</li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Sėkmingai užsiregistruojame. El. paštas išsaugomas. Slaptažodis lieka galioti su tarpais viduje. </p>
+
+<p>&nbsp;<b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Sistema neturi registruoti, turi pateikti pranešimą apie netinkamą el. paštą. Turi panaikinti tarpus slaptažodyje arba įspėti apie netinkamą formatą. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240213-152932.png" height="1600" width="720" style="border: 0px solid black"></span></p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240213-152944.png" height="1600" width="720" style="border: 0px solid black"></span></p>
+
+
+
+<p><b>Aplinka</b></p>
+
+<p>Galaxy A32 Android 11;</p>
+
+<p>Chrome 121.0.6167.164</p>
+
+<p>&nbsp;</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-177]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-177">Atsiskaitymas už prekes: sutikimas su ‘Privatumo politika’.</a>
+            <span class="subText">
+               Created: 13/Feb/24                   &nbsp;Updated: 13/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10186-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            TMMM                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="JPEG File">
+                    Screenshot_20240213-151625_Chrome-20240213-141109.jpg &nbsp;&nbsp;&nbsp;
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240213-141345.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10186-value" class="value" bgcolor="#ffffff" width="80%">      0|i0012f:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10186-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Atsiskaitymas už prekes: sutikimas su ‘Privatumo politika’ (nuoroda).</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Prisijungti su duomenimis:
+	<ol>
+		<li>email: <a href="mailto:test@cuvox.de" class="external-link" rel="nofollow noreferrer">test@cuvox.de</a>;</li>
+		<li>psw.: testas1.</li>
+	</ol>
+	</li>
+	<li>Pridėti bet kurią prekę, esančią sandėlyje į krepšelį.</li>
+	<li>Pereiti į krepšelį.</li>
+	<li>Spausti <b>‘Pereiti prie apmokėjimo’.</b></li>
+	<li>Paskrolinti į apačią ir nuspausti <b><span class="error">[Privatumo politika]</span>.</b></li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Puslapis nunaviguoja į vokišką svetainės versiją.</p>
+
+<p><b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Puslapis turi atverti informaciją ‘Privatumo politika’.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240213-141345.png" height="1600" width="720" style="border: 0px solid black"></span></p>
+
+
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/Screenshot_20240213-151625_Chrome-20240213-141109.jpg" height="1600" width="720" style="border: 0px solid black"></span></p>
+
+
+
+<p><b>Aplinka</b></p>
+
+<p>Galaxy A32 Android 11;</p>
+
+<p>Chrome 121.0.6167.164</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-174]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-174">Tuščias prekių krepšelis: neaktyvi nuoroda</a>
+            <span class="subText">
+               Created: 13/Feb/24                   &nbsp;Updated: 13/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10183-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            TMMM                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="PNG File">
+                    image-20240213-125017.png &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10183-value" class="value" bgcolor="#ffffff" width="80%">      0|i0011z:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10183-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Tuščiame prekių krepšelyje: neaktyvi nuoroda.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Prisijungti su duomenimis:
+	<ol>
+		<li>email: test@cuvox.de;</li>
+		<li>psw.: testas1.</li>
+	</ol>
+	</li>
+	<li>Spausti nuorodą</li>
+</ol>
+
+
+<p><a href="https://checklink.mail.ru/proxy?es=7YTrbUW6A4H1Vi7kMlTufoR4UbJqp5GCU%2FfKCSkU3LQ%3D&amp;egid=1UMQ%2Bm1y99qZapN9CJIFkpdd0yWjhVYD2loylA9kZNA%3D&amp;url=https%3A%2F%2Fclick.mail.ru%2Fredir%3Fu%3Dhttps%253A%252F%252Fm.aboutyou.lt%252Fkrepselis%26c%3Dswm%26r%3Dhttp%26o%3Dmail%26v%3D3%26s%3D6b4846e4e68745e6&amp;uidl=17078283141764620186&amp;from=budryte.m%40mail.ru&amp;to=budryte.m%40mail.ru&amp;email=budryte.m%40mail.ru" class="external-link" rel="nofollow noreferrer">https://m.aboutyou.lt/krepselis</a></p>
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Užeiname į tuščią krepšelį su neaktyvia nuoroda ‘Pridėti prekes arba prisijungti’.</p>
+
+<p><b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>&nbsp;Tekstas ‘Pridėti prekes arba prisijungti’ panašu, kad turi būti nuoroda. Arba turi būti atskiras mygtukas <span class="error">[Prisijungti]</span>.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/image-20240213-125017.png" height="1600" width="720" style="border: 0px solid black"></span></p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-168]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-168">Paskyra: gimimo data - raudonai dega klaida</a>
+            <span class="subText">
+               Created: 13/Feb/24                   &nbsp;Updated: 13/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10177-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            TMMM                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="JPEG File">
+                    Screenshot_20240213-141906_Chrome.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10177-value" class="value" bgcolor="#ffffff" width="80%">      0|i0010n:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10177-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Užėjus į Paskyrą → Profilis ir sauga → Gimimo data laukelis raudonas su klaida, nors registruojantis nebuvo duota tokio lauko užpildymui.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Prisijungti su duomenimis:
+	<ol>
+		<li>email: <a href="mailto:test@cuvox.de" class="external-link" rel="nofollow noreferrer">test@cuvox.de</a>;</li>
+		<li>psw.: testas1</li>
+	</ol>
+	</li>
+	<li><a href="https://checklink.mail.ru/proxy?es=7YTrbUW6A4H1Vi7kMlTufoR4UbJqp5GCU%2FfKCSkU3LQ%3D&amp;egid=1UMQ%2Bm1y99qZapN9CJIFkpdd0yWjhVYD2loylA9kZNA%3D&amp;url=https%3A%2F%2Fclick.mail.ru%2Fredir%3Fu%3Dhttps%253A%252F%252Fm.aboutyou.lt%252Fa%252Fprofile%26c%3Dswm%26r%3Dhttp%26o%3Dmail%26v%3D3%26s%3D00800899b7169b88&amp;uidl=17078270181815996888&amp;from=budryte.m%40mail.ru&amp;to=budryte.m%40mail.ru&amp;email=budryte.m%40mail.ru" class="external-link" rel="nofollow noreferrer">https://m.aboutyou.lt/a/profile</a></li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Laukas ‘Gimimo data’ dega raudonai.</p>
+
+<p><b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Jei laukas privalomas, turi būti pareikalautas užpildymui registruojantis.</p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/Screenshot_20240213-141906_Chrome.jpg" height="2400" width="1080" style="border: 0px solid black"></span></p>
+
+
+
+<p><b>Aplinka</b></p>
+
+<p>Galaxy A32 Android 11;</p>
+
+<p>Chrome 121.0.6167.164</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-162]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-162">Neišvertas tekstas</a>
+            <span class="subText">
+               Created: 13/Feb/24                   &nbsp;Updated: 13/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10171-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            TMMM                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="JPEG File">
+                    Screenshot_20240213-134728_Chrome-20240213-123139.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10171-value" class="value" bgcolor="#ffffff" width="80%">      0|i000zj:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10171-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Tekstas neišvertas į lietuvių k. </p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li>Prisijungti su duomenimis:
+	<ol>
+		<li>email: test@cuvox.de;</li>
+		<li>psw.: testas1.</li>
+	</ol>
+	</li>
+	<li>Spausti nuorodą
+	<ol>
+		<li><a href="https://checklink.mail.ru/proxy?es=7YTrbUW6A4H1Vi7kMlTufoR4UbJqp5GCU%2FfKCSkU3LQ%3D&amp;egid=1UMQ%2Bm1y99qZapN9CJIFkpdd0yWjhVYD2loylA9kZNA%3D&amp;url=https%3A%2F%2Fclick.mail.ru%2Fredir%3Fu%3Dhttps%253A%252F%252Fm.aboutyou.lt%252Fh%252Fssf%252F8507743993372%252Fq-8507830281116%26c%3Dswm%26r%3Dhttp%26o%3Dmail%26v%3D3%26s%3D6d0bef531ec660f4&amp;uidl=17078249490959321595&amp;from=budryte.m%40mail.ru&amp;to=budryte.m%40mail.ru&amp;email=budryte.m%40mail.ru" class="external-link" rel="nofollow noreferrer">https://m.aboutyou.lt/h/ssf/8507743993372/q-8507830281116</a>;</li>
+		<li><a href="https://checklink.mail.ru/proxy?es=7YTrbUW6A4H1Vi7kMlTufoR4UbJqp5GCU%2FfKCSkU3LQ%3D&amp;egid=1UMQ%2Bm1y99qZapN9CJIFkpdd0yWjhVYD2loylA9kZNA%3D&amp;url=https%3A%2F%2Fclick.mail.ru%2Fredir%3Fu%3Dhttps%253A%252F%252Fm.aboutyou.lt%252Fa%252Fbank-data%253FbackTo%253D%252Fh%252Fssf%252F5155547225244%252Fq-5155524383772%26c%3Dswm%26r%3Dhttp%26o%3Dmail%26v%3D3%26s%3Df2c59f90cc7dc2da&amp;uidl=17078265921025986267&amp;from=budryte.m%40mail.ru&amp;to=budryte.m%40mail.ru&amp;email=budryte.m%40mail.ru" class="external-link" rel="nofollow noreferrer">https://m.aboutyou.lt/a/bank-data?backTo=/h/ssf/5155547225244/q-5155524383772</a>.</li>
+	</ol>
+	</li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Neišvertas tekstas.&nbsp;</p>
+
+<p><b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Turi būti išversta į lietuvių k. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/Screenshot_20240213-134728_Chrome-20240213-123139.jpg" height="1600" width="720" style="border: 0px solid black"></span></p>
+
+
+
+<p><b>Aplinka</b></p>
+
+<p>Galaxy A32 Android 11;</p>
+
+<p>Chrome 121.0.6167.164</p>
+
+<p>&nbsp;</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>
+<table class="tableBorder" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" width="100%" colspan="2" valign="top">
+                            <h3 class="formtitle">
+                        [COD-150]&nbsp;<a href="https://tesu15.atlassian.net/browse/COD-150">Cookies pranešimas: spaudžiant 'Rekvizitai' - jų nesimato. Užstoja Cookies pranešimas.</a>
+            <span class="subText">
+               Created: 13/Feb/24                   &nbsp;Updated: 13/Feb/24
+
+                                            </span>
+            </h3>
+        </td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Status:</b></td>
+        <td width="80%">To Do</td>
+    </tr>
+    <tr>
+        <td width="20%"><b>Project:</b></td>
+        <td width="80%"><a href="https://tesu15.atlassian.net/secure/BrowseProject.jspa?id=10002">CodeAcademy</a></td>
+    </tr>
+
+        <tr>
+            <td><b>Components:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Affects versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+
+        <tr>
+            <td><b>Fix versions:</b></td>
+            <td>
+                            None
+                </td>
+    </tr>
+    
+    
+    </tbody></table>
+
+<br>
+<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td bgcolor="#f0f0f0" valign="top" width="20%">
+            <b>Type:</b>
+        </td>
+        <td bgcolor="#ffffff" valign="top" width="30%">
+            Bug
+        </td>
+
+                    <td bgcolor="#f0f0f0">
+                <b>Priority:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="">
+                Medium
+            </td>
+            </tr>
+    <tr>
+                        <td bgcolor="#f0f0f0" valign="top" width="20%">
+                <b>Reporter:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_reporter_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+        
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Assignee:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" nowrap="" width="30%">
+                                        
+                
+        
+            <a class="user-hover" rel="712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" id="word_assignee_712020:41f0622b-dfb3-4d7f-9a64-8f15f22b37b7" href="https://tesu15.atlassian.net/secure/ViewProfile.jspa?accountId=712020%3A41f0622b-dfb3-4d7f-9a64-8f15f22b37b7">
+                    Margarita Budryte
+                </a>
+
+                            </td>
+            </tr>
+    	<tr>
+		<td bgcolor="#f0f0f0" width="20%">
+			<b>Resolution:</b>
+		</td>
+		<td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+            				Unresolved
+                    </td>
+                    <td bgcolor="#f0f0f0" width="20%">
+                <b>Votes:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top" width="30%" nowrap="">
+                0
+            </td>
+        
+    </tr>
+    
+        <tr>
+        <td bgcolor="#f0f0f0" width="20%">
+            <b>Labels:</b>
+        </td>
+        <td id="labels-10159-value" class="value" bgcolor="#ffffff" valign="top" colspan="3" nowrap="">
+                            TMMM                    </td>
+    </tr>
+    
+    	<tr>
+        		<td bgcolor="#f0f0f0" width="20%"><b>Remaining Estimate:</b></td>
+        <td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Time Spent:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+	</tr>
+    <tr>
+                <td bgcolor="#f0f0f0" width="20%"><b>Original estimate:</b></td>
+		<td bgcolor="#ffffff" valign="top" nowrap="" width="80%" colspan="3">
+                            Not Specified
+            		</td>
+    </tr>
+    
+    </tbody></table>
+
+
+
+    <br>
+
+    	<table class="grid" cellpadding="0" cellspacing="0" border="0" width="100%">
+            
+
+                <tbody><tr>
+            <td bgcolor="#f0f0f0" width="20%" valign="top">
+                <b>Attachments:</b>
+            </td>
+            <td bgcolor="#ffffff" valign="top">
+                                    <img src="./Jira_files/image.gif" height="16" width="16" border="0" alt="JPEG File">
+                    Screenshot_20240213-115057_Chrome.jpg &nbsp;&nbsp;&nbsp;
+                            </td>
+        </tr>
+        
+    
+
+
+
+                        <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Rank:</b></td>
+                <td id="customfield_10019-10159-value" class="value" bgcolor="#ffffff" width="80%">      0|i000x3:
+  </td>
+            </tr>
+                                <tr>
+                <td bgcolor="#f0f0f0" width="20%" valign="top"><b>Sprint:</b></td>
+                <td id="customfield_10020-10159-value" class="value" bgcolor="#ffffff" width="80%"></td>
+            </tr>
+            </tbody></table>
+
+    <br>
+
+    <table cellpadding="2" cellspacing="0" border="0" width="100%" align="center">
+    <tbody><tr>
+        <td bgcolor="#bbbbbb" width="1%" nowrap="" align="center">
+            &nbsp;<font color="#ffffff"><b>Description</b></font>&nbsp;
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+    </tbody></table>
+
+    <table cellpadding="0" cellspacing="0" border="0" width="100%">
+    <tbody><tr>
+        <td id="descriptionArea">
+            <p><b>Įžanga</b></p>
+
+<p>Cookies pranešimas: spaudžiant 'Rekvizitai' jų nesimato. Cookies pranešimas per didelis.</p>
+
+<p><b>Atkartojimo žingsniai</b></p>
+
+<ol>
+	<li><a href="http://m.aboutyou.lt/" class="external-link" rel="nofollow noreferrer">m.aboutyou.lt</a></li>
+	<li>Spaudžiam ant Cookies pranešimo <b><span class="error">[Rekvizitai]</span></b>.</li>
+</ol>
+
+
+<p><b>Rezultatas po žingsnių:</b></p>
+
+<p>Nesimato informacijos apie Rekvizitus. Didelis Cookies langas užstoja vaizdą. </p>
+
+<p><span class="image-wrap" style=""><img src="./Jira_files/Screenshot_20240213-115057_Chrome.jpg" height="2400" width="1080" style="border: 0px solid black"></span></p>
+
+
+
+<p><b>Kaip tikimės kad veiktų</b>:</p>
+
+<p>Cookies pranešimą reikia sumažinti.</p>
+
+<p><b>Aplinka</b></p>
+
+<p>Galaxy A32 Android 11;</p>
+
+<p>Chrome 121.0.6167.164</p>
+            <br>
+        </td>
+    </tr>
+    </tbody></table>
+
+<hr class="fullcontent"><br><br style="page-break-before:always;"><br>Generated at Sun Mar 03 20:11:38 UTC 2024 by Margarita Budryte using Jira 1001.0.0-SNAPSHOT#100247-sha1:00d8a5aeac820b82a26a9dc2e0dcc68e3e44564b.
+
+
+</body></html>
